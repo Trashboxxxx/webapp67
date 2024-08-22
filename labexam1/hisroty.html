@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <style>
+        body{
+            background-image: url(pinkk.jpg); width: auto; height: auto;
+         }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>  
+
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>สมัครสมาชิกผู้ใช้งาน</h2>
+        <form>
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input type="text" id="username" name="username" placeholder="ชื่อผู้ใช้">
+
+            <label for="fullname">ชื่อ-นามสกุล:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="ชื่อ-สกุล">
+
+            <label for="phone">เบอร์โทร:</label>
+            <input type="text" id="phone" name="phone" placeholder="เบอร์โทร">
+
+            <label for="email">อีเมล์:</label>
+            <input type="email" id="email" name="email" placeholder="อีเมล์">
+
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" placeholder="รหัสผ่าน">
+
+            <label for="address">บ้านเลขที่:</label>
+            <input type="text" id="address" name="address" placeholder="บ้านเลขที่">
+
+            <label for="province">จังหวัด:</label>
+            <select id="province" name="province">
+                <option value="" selected>เลือกจังหวัด</option>
+                <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                <option value="ปทุมธานี">ปทุมธานี</option>
+                <!-- เพิ่มจังหวัดอื่นๆ ที่นี่ -->
+            </select>
+
+            <label for="district">อำเภอ:</label>
+            <select id="district" name="district">
+                <option value="" selected>เลือกอำเภอ</option>
+                <option value="ธัญบุรี">ธัญบุรี</option>
+                <!-- เพิ่มอำเภออื่นๆ ที่นี่ -->
+            </select>
+
+            <label for="subdistrict">ตำบล:</label>
+            <select id="subdistrict" name="subdistrict">
+                <option value="" selected>เลือกตำบล</option>
+                <option value="บึงน้ำรักษ์">บึงน้ำรักษ์</option>
+                <!-- เพิ่มตำบลอื่นๆ ที่นี่ -->
+            </select>
+
+            <label for="postalcode">รหัสไปรษณีย์:</label>
+            <input type="text" id="postalcode" name="postalcode" placeholder="รหัสไปรษณีย์">
+
+            <label for="address-detail">รายละเอียดที่อยู่:</label>
+            <input type="text" id="address-detail" name="address-detail" placeholder="หมู่,ซอย,ถนน">
+
+            <label for="profile">อัปโหลดรูปโปรไฟล์:</label>
+            <input type="file" id="profile" name="profile">
+
+            <div class="btn-container">
+                <button type="submit" class="btn-submit">สมัครสมาชิก</button>
+                <button type="reset" class="btn-cancel">ยกเลิก</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
